@@ -25,6 +25,7 @@ class _DashboardState extends State<Dashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: getBody(),
       floatingActionButton: _buildFloatingActionButton(),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
@@ -34,7 +35,7 @@ class _DashboardState extends State<Dashboard> {
 
   Widget _buildFloatingActionButton() {
     return FloatingActionButton(
-      backgroundColor: Colors.black87,
+      backgroundColor: Colors.grey.shade900,
       elevation: 0.0,
       child: const Icon(
         Iconsax.add,
@@ -53,7 +54,7 @@ class _DashboardState extends State<Dashboard> {
 
   Widget _buildBottomBar() {
     return BottomAppBar(
-      color: Colors.black87,
+      color: Colors.grey.shade900,
       elevation: 0.0,
       shape: const CircularNotchedRectangle(),
       child: SizedBox(
@@ -100,7 +101,7 @@ class _DashboardState extends State<Dashboard> {
 
   Widget getBody() {
     List<Widget> pages = [
-      const MainPage(),
+      MainPage(bankName: widget.bankName.toString()),
       const GraphPage(),
     ];
     return IndexedStack(
