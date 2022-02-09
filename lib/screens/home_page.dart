@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
 
     return Scaffold(
       body: Container(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 24.0),
         width: _width,
         height: _height,
         color: Colors.white,
