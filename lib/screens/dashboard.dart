@@ -58,7 +58,7 @@ class _DashboardState extends State<Dashboard> {
       elevation: 0.0,
       shape: const CircularNotchedRectangle(),
       child: SizedBox(
-        height: 74.0,
+        height: 68.0,
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 70.0),
           child: Row(
@@ -76,10 +76,7 @@ class _DashboardState extends State<Dashboard> {
                   color: Colors.white,
                 ),
               ),
-              const SizedBox(
-                height: 20.0,
-                width: 30.0,
-              ),
+              const SizedBox(width: 30.0),
               GestureDetector(
                 onTap: () {
                   setState(() {
