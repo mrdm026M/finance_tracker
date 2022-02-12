@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'screens/home_page.dart';
 
 void main() {
   runApp(const MyApp());
-  SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
+  // SystemChrome.setEnabledSystemUIMode(SystemUiMode.immersiveSticky);
 }
 
 class MyApp extends StatelessWidget {
@@ -19,3 +18,7 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
+// TODO: 1 - Add Tabs in All Transacton page
+// TODO: 2 - Create Add Transaction page
